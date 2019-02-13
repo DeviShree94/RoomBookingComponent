@@ -42,6 +42,8 @@ export class AppComponent {
 
   decreaseAdultCount(){
     this.adultCount--;
+    /*if each room should have an adult then uncomment the below lines and line number 57 and then comment line no 54,55 & 56*/
+    
     // if(this.adultCount < this.roomCount){
     //   this.roomCount--;
     //   while(((this.childrenCount + this.adultCount) > (this.roomCount* 4)) && (this.adultCount !== 3)){
