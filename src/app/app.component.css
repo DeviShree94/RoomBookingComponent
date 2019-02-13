@@ -1,0 +1,31 @@
+.borderless {
+    border-collapse: collapse;
+}
+
+.placement {
+    margin: 10% 0% 0% 15%;
+}
+
+.alignment {
+    float:right;
+}
+
+.widthClass{
+    padding: 2%;
+    width: 75%;
+}
+
+.clickableImage{
+    display:inline-block;
+    cursor:pointer;
+}
+
+.disableImage{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.valueStyle{
+    display:inline-block;
+    user-select: none;
+}

@@ -1,0 +1,50 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <div class="placement">
+    <div style='color:#043184; font-size:20px;'>
+      <i class="fas fa-users" style='margin-right:10px;color:#043184'></i>Choose number of <b>people</b>
+      <ul class="list-group borderless">
+        <li class = "list-group-item widthClass">
+          <i class ="fas fa-bed" style='margin-right:10px;color:#043184'></i>
+          <span style='color:#043184;user-select:none'>ROOMS</span>
+          <div class = "alignment">
+            <div class="clickableImage" [ngClass]="{'disableImage': disableRoomDecrement}" (click)="decreaseRoomCount()">
+              <i class="fas fa-minus-circle" style='margin-right:10px;color:#043184; font-size:25px;'></i>
+            </div>
+            <div class="valueStyle">{{roomCount}}</div>
+            <div class="clickableImage" [ngClass]="{'disableImage': disableRoomIncrement}" (click)="increaseRoomCount()">
+              <i class= "fas fa-plus-circle" style='margin-left:10px;color:#ff0000; font-size:25px;'></i>
+            </div>
+          </div>
+        </li>
+        <li class = "list-group-item widthClass">
+          <i class ="fas fa-user-alt" style='margin-right:10px;color:#043184;'></i>
+          <span style='color:#043184;user-select:none'>ADULTS</span>
+          <div class = "alignment">
+            <div class="clickableImage" [ngClass]="{'disableImage': disableAdultDecrement}" (click)="decreaseAdultCount()">
+              <i class="fas fa-minus-circle" style='margin-right:10px;color:#043184; font-size:25px;'></i>
+            </div>
+            <div class="valueStyle">{{adultCount}}</div>
+            <div class="clickableImage" [ngClass]="{'disableImage': disableAdultIncrement}" (click)="increaseAdultCount()">
+              <i class= "fas fa-plus-circle" style='margin-left:10px;color:#ff0000 ;font-size:25px;'></i>
+            </div>
+          </div>
+        </li>
+        <li class = "list-group-item widthClass">
+          <i class ="fas fa-child" style='margin-right:10px;color:#043184'></i>
+          <span style='color:#043184; user-select:none'>CHILDREN</span>
+          <div class = "alignment">
+            <div class="clickableImage" [ngClass]="{'disableImage': disableChildDecrement}" (click)="decreaseChildrenCount()">
+              <i class="fas fa-minus-circle" style='margin-right:10px;color:#043184; font-size:25px;'></i>
+            </div>
+            <div class="valueStyle">{{childrenCount}}</div>
+            <div class="clickableImage" [ngClass]="{'disableImage': disableChildIncrement}" (click)="increaseChildrenCount()">
+              <i class= "fas fa-plus-circle" style='margin-left:10px;color:#ff0000; font-size:25px;'></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
